@@ -131,7 +131,7 @@ getRDSInstances()
                     .then(() => open(rdsCPUUrl))
                     .catch((err) => console.log(err))
             } else {
-                console.log('exiting.')
+                console.log('Exiting.')
             }
         }
     })
