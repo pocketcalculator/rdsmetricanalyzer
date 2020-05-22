@@ -14,7 +14,7 @@ let endTime = new Date()
 let startTime = new Date()
 startTime.setDate(endTime.getDate() - 1)
 
-// Set the regiona
+// Set the region
 if (argv.region) {
     console.log('region: ' + argv.region)
     config.update({ region: argv.region })

@@ -14,7 +14,7 @@ let endTime = new Date()
 let startTime = new Date()
 startTime.setDate(endTime.getDate() - 1)
 
-// Set the regiona
+// Set the region
 if (argv.region) {
     console.log('region: ' + argv.region)
     config.update({ region: argv.region })
@@ -52,6 +52,11 @@ async function getRDSInstances() {
     })
     console.log(rdsInstanceIdList.length + ' RDS Instances found: ')
     console.log(rdsInstanceIdList)
+    // later add...
+    // db instance identifier
+    // db cluster identifier
+    // db engine version
+    // db instance class
     return rdsInstanceIdList
 }
 
